@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>isabel | Home</title>
+    <title>Projects ~ isabel</title>
     <link id="mode" href="styles.css" rel="stylesheet" type="text/css" />
     <script src="script.js"></script>
   </head>
@@ -16,7 +16,7 @@
       .topnav a.icon {
         float: right;
         display: block;
-      }
+      }      
     }
 
     @media screen and (max-width: 600px) {
@@ -106,7 +106,7 @@
       overflow: hidden;
     }
     label {
-      font-size: 1.5em;
+      font-size: 1vw;
       font-weight: bold;
       position: absolute;
       z-index: 2;
@@ -168,20 +168,24 @@
         padding-left: 2vw;
         border-left: none;
       }
-
-      label {
-        width: 85%;
-        font-size: 1.5em;
+      li label {
+        font-size: inherit;
+        text-align: center;
+        width: 100%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
         display: block;
-        justify-content: center;
       }
       .content {
-        padding: 3vw;
+        padding: 4vw;
         border-color: #ededed;
-        text-align: center;
+        text-align: left;
+      }
+      .content p, h4{
+        text-align: left;
+        margin: 0px;
+        margin-top: 3vw;
       }
       .content:before,
       .content:after {
