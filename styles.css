@@ -1,0 +1,278 @@
+body {
+  background-color: lightgray;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+h1,
+h2 {
+  font-weight: lighter;
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 2px solid #b4b4b4;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #65656569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #848484b2;
+}
+
+/*
+Header Element 
+*/
+img {
+  width: 100%;
+  vertical-align: middle;
+  margin: 0.5vw;
+  object-fit: contain;
+}
+
+header img {
+  max-width: 200px;
+  margin: 1vw;
+}
+
+/*
+Nav Element 
+*/
+.topnav {
+  overflow: hidden;
+  background-color: #656565;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+a {
+  color: #666666;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropbtn:after {
+  content: "\25bc";
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #808080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: whitesmokesmoke;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #808080;
+  color: whitesmoke;
+}
+
+.dropdown-content a:hover {
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*
+Content div
+*/
+.pageContent {
+  display: flex;
+  width: 100%;
+  font-size: 2vw;
+}
+
+.icon {
+  width: 5vw;
+  padding-right: 1vw;
+}
+
+.pic{
+  margin: 2vw;
+}
+
+.left {
+  width: 33%;
+  margin: 1vw;
+}
+
+.left p,
+h1 {
+  width: 100%;
+}
+
+h1 {
+  font-style: italic;
+}
+
+.main {
+  width: 33%;
+  margin: 1vw;
+}
+
+.right {
+  width: 33%;
+  margin: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+  .pageContent {
+    display: block;
+    width: 95%;
+    font-size: 4vw;
+  }
+  .left,
+  .main,
+  .right {
+    min-width: 100%;
+  }
+}
+
+/*
+Employment timeline
+*/
+* {
+  box-sizing: border-box;
+}
+
+.timeline {
+  position: relative;
+  z-index: -1;
+  width: 80%;
+  margin: auto;
+  margin-right: 3vw;
+  margin-left: 10vw;
+}
+.title {
+  margin-left: 10vw;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #ededed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin-left: -3px;
+}
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -9px;
+  background-color: #ededed;
+  border: 4px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.cont {
+  left: 0;
+}
+
+.cont::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #ededed;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #ededed;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: #ededed;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 21px;
+  }
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .container::before {
+    left: 60px;
+    border: medium solid #ededed;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ededed transparent transparent;
+  }
+  .cont::after {
+    left: 10px;
+  }
+}
