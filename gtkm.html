@@ -1,49 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="script.js"></script>
+    <script src="Reusable/NavBar/navbar.js"></script>
+    <script src="Reusable/NavBar/navbar-script.js"></script>
+    <script src="Reusable/Header/header.js"></script>
+    <script src="Reusable/Footer/footer.js"></script>
+    <script src="Reusable/NavBar/scripts.js"></script>  
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Get to Know Me ~ isabel</title>
-    <link id="mode" href="styles.css" rel="stylesheet" type="text/css" />
-    <script src="script.js"></script>
-  </head>
-  <style>
-      img{width: 40%;}
-    @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child),
-      .dropdown .dropbtn {
-        display: none;
-      }
-      .topnav a.icon {
-        float: right;
-        display: block;
-      }
-      .topnav.responsive {
-        position: relative;
-      }
-      .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-      .topnav.responsive .dropdown {
-        float: none;
-      }
-      .topnav.responsive .dropdown-content {
-        position: relative;
-      }
-      .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
-    }
+    
+    <title>Home ~ isabel</title>
 
+    <link id="mode" href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/pictures/tab.ico" type="image/ico">
+  </head>
+
+  <style>
+    img{width: 40%;}
     @media screen and (max-width: 600px) { 
         .left, .main, .right{
             flex-wrap: wrap;
@@ -55,110 +30,81 @@
         img {width: 100%;}
     }
   </style>
+  
+  <body>
+    <header-component></header-component>
+      
+    <nav-component></nav-component>
 
-<body>
-    <header>
-        <center><img src="icons/logo.png"></center>
-    </header>
-    <nav id="navbar">
-        <div class="topnav" id="myTopnav">
-      <a href="index.html" class="active">Home</a>
+    <div class="pageContent" style="flex-wrap: wrap;">
+      <h1>My Interests</h1>
+      <div style="width:  47.5%;" class="left">
+        <center><img  class="pic" src="pictures/health.jpg"></center>  
+        
+              <h2>Gym Rat</h2>
+              <p>
+                  I have taken pride in my health and I want to be the strongest I can be. Mental and physical health are equally 
+                  important and I take steps to make both better consistently. I especially love taking moments to myself or 
+                  communicating with loved ones for peace of mind. I am an avid gym-goer and set monthly goals for myself to keep 
+                  my motivation high.
+              </p>
 
-      <div class="dropdown">
-        <button class="dropbtn">
-          About Me
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="mystory.html">My Story</a>
-          <a href="gtkm.html">Get To Know Me</a>
-        </div>
       </div>
-
-      <div class="dropdown">
-        <button class="dropbtn">
-          Professional
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="edu.html">Education</a>
-          <a href="employ.html">Employment</a>
-        </div>
+      <div style="width: 47.5%;" class="right">
+        <center><img class="pic" src="pictures/read.jpg"></center>  
+          <div>
+              <h2>Book Worm</h2>
+              <p>
+                  I enjoy my quiet reading time when I'm not working on side projects. Barnes and Noble trips are always fun 
+                  but I truly enjoy finding local quaint book stores. Sci-fi/fantasy or biographies of favorite celebrities are 
+                  my favorite reads. I love new book recommendations and trading books with friends. I have recently joined a book club 
+                  with my mother at our local library. 
+              </p>
+          </div>
+      </div>
+      <h1>My Hobbies</h1>
+      <div style="width: 100%; display: flex;" class="left">
+          <img class="pic" src="pictures/scuba.jpg">
+          <div >
+            <h2>Diver Down</h2>
+            <p>
+                  I'm a certified Advanced SCUBA Diver. My favorite dive has been off the coast of Oahu, Hawai'i when I went 
+                  free diving with Galapagos and Tiger sharks (no cage). I also went diving through the lava tubes along the 
+                  Northern sea shore. The picture to the left was my first wreck dive on the Kittiwake in Grand Cayman. 
+                  My deepest dive was on the Thunderbolt shipwreck in the Florida Keys at 120ft. I hope to continue diving 
+                  throughout my whole life as my grandfather and father have. 
+              </p>
+          </div>
+      </div>
+      <div style="width: 100%; display: flex;" class="right">
+          <img class="pic" src="pictures/forest.jpg">
+          <div >
+              <h2>Wandering Woman</h2>
+              <p>
+                  Since I was a child I have often traveled with my family and friends. I have been to 5 countries: 
+                  Ireland, Scotland, Wales, England, and Canada. I have been to nearly half of the states in the USA. I 
+                  often visit my second home in the Florida Keys and I hope to retire there one day. Until then, as I work 
+                  remotely, I hope to move around the country and possibly travel to other countries for work. 
+              </p>
+          </div>
+          </div>
+          <div style="width: 100%; display: flex;" class="left">
+              <img class="pic" 
+              src="pictures/hike.jpg">
+              <div >
+                  <h2>Audacious Adventurer</h2>
+                  <p>
+                      I very often like to go on adventures with friends or on my own. While I love anything aquatic I try to 
+                      have fun above sea level. One of my favorite forms of adventure is going on a hike. I love discovering
+                      new unique actives to do like zip-lining or bunjee jumping, which is on my bucket list. My hope is to
+                      eventually retire early and travel for the remainder of my life.
+                  </p>
+              </div>
+          </div>
       </div>
       
-      <a href="project.html">My Projects</a>
-      
-      <a style="font-size: 15px" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-  </nav>
-<div class="pageContent" style="flex-wrap: wrap;">
-    <h1>My Interests</h1>
-    <div style="width:  47.5%;" class="left">
-      <center><img  class="pic" src="pictures/health.jpg"></center>  
-      
-            <h2>Gym Rat</h2>
-            <p>
-                I have taken pride in my health and I want to be the strongest I can be. Mental and physical health are equally 
-                important and I take steps to make both better consistently. I especially love taking moments to myself or 
-                communicating with loved ones for peace of mind. I am an avid gym-goer and set monthly goals for myself to keep 
-                my motivation high.
-            </p>
+    <footer-component></footer-component>  
 
-    </div>
-    <div style="width: 47.5%;" class="right">
-      <center><img class="pic" src="pictures/read.jpg"></center>  
-        <div>
-            <h2>Book Worm</h2>
-            <p>
-                I enjoy my quiet reading time when I'm not working on side projects. Barnes and Noble trips are always fun 
-                but I truly enjoy finding local quaint book stores. Sci-fi/fantasy or biographies of favorite celebrities are 
-                my favorite reads. I love new book recommendations and trading books with friends. I have recently joined a book club 
-                with my mother at our local library. 
-            </p>
-        </div>
-    </div>
-    <h1>My Hobbies</h1>
-    <div style="width: 100%; display: flex;" class="left">
-        <img class="pic" src="pictures/scuba.jpg">
-        <div >
-          <h2>Diver Down</h2>
-          <p>
-                I'm a certified Advanced SCUBA Diver. My favorite dive has been off the coast of Oahu, Hawai'i when I went 
-                free diving with Galapagos and Tiger sharks (no cage). I also went diving through the lava tubes along the 
-                Northern sea shore. The picture to the left was my first wreck dive on the Kittiwake in Grand Cayman. 
-                My deepest dive was on the Thunderbolt shipwreck in the Florida Keys at 120ft. I hope to continue diving 
-                throughout my whole life as my grandfather and father have. 
-            </p>
-        </div>
-    </div>
-    <div style="width: 100%; display: flex;" class="right">
-        <img class="pic" src="pictures/forest.jpg">
-        <div >
-            <h2>Wandering Woman</h2>
-            <p>
-                Since I was a child I have often traveled with my family and friends. I have been to 5 countries: 
-                Ireland, Scotland, Wales, England, and Canada. I have been to nearly half of the states in the USA. I 
-                often visit my second home in the Florida Keys and I hope to retire there one day. Until then, as I work 
-                remotely, I hope to move around the country and possibly travel to other countries for work. 
-            </p>
-        </div>
-        </div>
-        <div style="width: 100%; display: flex;" class="left">
-            <img class="pic" 
-            src="pictures/hike.jpg">
-            <div >
-                <h2>Audacious Adventurer</h2>
-                <p>
-                    I very often like to go on adventures with friends or on my own. While I love anything aquatic I try to 
-                    have fun above sea level. One of my favorite forms of adventure is going on a hike. I love discovering
-                    new unique actives to do like zip-lining or bunjee jumping, which is on my bucket list. My hope is to
-                    eventually retire early and travel for the remainder of my life.
-                </p>
-            </div>
-        </div>
-    </div>
-    <footer>
-      <center>&#169; Copyright 2022 Isabel Gnagy. All Rights Reserved.</center>
-    </footer>
-</body>
+  </body>
+
 </html>
