@@ -2,6 +2,7 @@ body {
   background-color: lightgray;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -9,11 +10,11 @@ body {
 
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
   100% {
-      opacity: 1;
-   }
+    opacity: 1;
+  }
 }
 
 a,
@@ -29,7 +30,6 @@ h2 {
 ::-webkit-scrollbar-track {
   background: transparent;
   border: 2px solid #b4b4b4;
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -53,16 +53,12 @@ Content div
 .pageContent {
   display: flex;
   width: 100%;
-  font-size: 2vw;
 }
 
 .icon {
-  width: 5vw;
-  padding-right: 1vw;
-}
-
-.pic{
-  margin: 2vw;
+  height: 20px;
+  width: auto;
+  padding-right: 5px;
 }
 
 .left {
@@ -192,4 +188,3 @@ Employment timeline
     left: 10px;
   }
 }
-

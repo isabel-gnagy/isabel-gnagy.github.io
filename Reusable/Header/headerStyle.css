@@ -1,13 +1,12 @@
-  header img {
-    max-width: 200px;
-    margin: 1vw;
-  }
+header img {
+  max-width: 200px;
+  margin: 1vw;
+}
 
-  .hidden{
-    display: none;
-  }
+.hidden {
+  display: none;
+}
 
-  .shown{
-    display: block;
-  }
-  
+.shown {
+  display: block;
+}

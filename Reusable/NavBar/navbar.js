@@ -1,6 +1,6 @@
 class NavBar extends HTMLElement {
-    connectedCallback() {
-      this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
       <nav id="navbar">
         <!-- Will not display until the CSS has loaded -->
         <style> .topnav { display: none; } </style>
@@ -14,7 +14,7 @@ class NavBar extends HTMLElement {
                   <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                  <a href="mystory.html">My Story</a>
+                  <a href="mystory.html">My Story</a> 
                   <a href="gtkm.html">Get To Know Me</a>
                 </div>
               </div>
@@ -35,9 +35,8 @@ class NavBar extends HTMLElement {
               <a style="font-size: 15px" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
     
-    `
-    }
+    `;
+  }
 }
 
-customElements.define('nav-component', NavBar);
-
+customElements.define("nav-component", NavBar);
