@@ -18,123 +18,49 @@
   </head>
 
   <style>
-    /*
-    Timeline
-    */
-    #timeline {
-      list-style: none;
-      margin: 2vw;
-      padding-left: 10vw;
+    .timeline ul li:nth-child(1):hover::before {
+      background-color: #d43333;
+      box-shadow: 0px 0px 15px 3px #d43333;
     }
-    #timeline li {
-      margin: 2vw;
+    .timeline ul li:nth-child(2):hover::before {
+      background-color: #d4d133;
+      box-shadow: 0px 0px 15px 3px #d4d133;
+    }
+    .timeline ul li:nth-child(3):hover::before {
+      background-color: #33d433;
+      box-shadow: 0px 0px 15px 3px #33d433;
+    }
+
+    ol {
+      list-style-type: none;
+    }
+    ol li {
+      padding: 0.5em;
       position: relative;
-    }
-    .circle {
-      margin-top: -1vw;
-      top: 50%;
-      left: -4vw;
-      width: 2vw;
-      height: 2vw;
-      border: 0.3vw solid black;
-      background-color: #ededed;
-      border-radius: 50%;
-      display: block;
-      position: absolute;
-    }
-    .content {
-      padding: 2vw;
-      max-height: 0;
-      margin-top: 2vw;
-      vertical-align: top;
-      border-color: #ededed;
-      position: relative;
-      margin-right: 2vw;
-    }
-    .content:before,
-    .content:after {
-      content: "";
-      width: 0;
-      height: 0;
-      border: solid transparent;
-      position: absolute;
-      pointer-events: none;
-      right: 100%;
-    }
-    .content:before {
-      border-right-color: inherit;
-      border-width: 1vw;
-      top: 50%;
-      margin-top: -1vw;
-    }
-    .content:afte {
-      top: 50%;
-      margin-right: 2em;
-    }
-    .content p,
-    h4 {
-      max-height: 0;
-      text-align: justify;
-      word-break: break-word;
-      hyphens: auto;
-      overflow: hidden;
-    }
-    label {
-      font-size: 1vw;
-      font-weight: bold;
-      position: absolute;
+      transition: 0.5s;
       z-index: 2;
-      cursor: pointer;
-      top: 1vw;
-      padding-left: 1vw;
     }
-    .radio {
-      display: none;
-    }
-    .radio:checked + .relative label {
-      cursor: auto;
-    }
-    .radio:checked ~ .content {
-      max-height: fit-content;
-      border-color: black;
-      border-width: 0.4vw;
-      border-style: solid;
-      border-radius: 0.5em;
-      margin-right: 1vw;
-    }
-    .radio:checked ~ .content p {
-      max-height: fit-content;
-      line-height: 1.5em;
-    }
-    .radio:checked ~ .content h4 {
-      max-height: fit-content;
-    }
-    .done {
-      margin-left: 0.5vw;
-      height: 1.5vw;
-      width: 1.5vw;
-      background-color: #75b55e79;
+    ol li:before {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: black;
       border-radius: 50%;
-      display: inline-block;
-      vertical-align: middle;
+      left: -16px;
+      transition: 0.5s;
     }
-    .doing {
-      margin-left: 0.5vw;
-      height: 1.5vw;
-      width: 1.5vw;
-      background-color: #e0af4484;
-      border-radius: 50%;
-      display: inline-block;
-      vertical-align: middle;
+    ol li:nth-child(4)::before {
+      background-color: #33d433;
+      box-shadow: 0px 0px 15px 3px #33d433;
     }
-    .want {
-      margin-left: 0.5vw;
-      height: 1.5vw;
-      width: 1.5vw;
-      background-color: #cb626286;
-      border-radius: 50%;
-      display: inline-block;
-      vertical-align: middle;
+    ol li:nth-child(2)::before {
+      background-color: #d43333;
+      box-shadow: 0px 0px 15px 3px #d43333;
+    }
+    ol li:nth-child(3)::before {
+      background-color: #d4d133;
+      box-shadow: 0px 0px 15px 3px #d4d133;
     }
   </style>
 
@@ -143,108 +69,95 @@
 
     <nav-component></nav-component>
 
-    <ul id="timeline">
-      <h1>All Projects</h1>
-      <p>
-        <b>Legend:</b>
-        <br />Idea/In the works=<span class="status want"></span>
-        <br />Inprogess/Updates Continue=<span class="status doing"></span>
-        <br />Completed=<span class="status done"></span>
-      </p>
-      <li class="work">
-        <input class="radio" id="item1" name="works" type="radio" />
-        <div class="relative">
-          <label for="item1">Mini-Games</label>
-          <span class="circle"></span>
-        </div>
-        <div class="content">
-          <h4>Start Date: <i>TBD</i></h4>
-          <h4>Current Status:<span class="status want"></span></h4>
-          <h4>
-            Links:<i><a href="#">TBD</a></i>
-          </h4>
-          <p>
-            I want to create three different games each using a different
-            script. I would like to make my own version of mancala, chess, and
-            Tetris and pair each with either JavaScript, TypeScript, or jQuery.
-            Before I begin, I must do some research on which language would be
-            the best match for each game.
-          </p>
-        </div>
-      </li>
-      <li class="work">
-        <input class="radio" id="item2" name="works" type="radio" />
-        <div class="relative">
-          <label for="item2">Personal Profolio Website</label>
-          <span class="circle"></span>
-        </div>
-        <div class="content">
-          <h4>Start Date: <i>Mid June 2022</i></h4>
-          <h4>Current Status:<span class="status doing"></span></h4>
-          <h4>
-            Links: <i><a href="index.html">Home Page</a></i> |
-            <i
-              ><a
-                href="https://github.com/isabel-gnagy/isabel-gnagy.github.io"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub Repo</a
-              ></i
-            >
-          </h4>
-          <p>
-            After completing my "Personal & Professional Website" project, I
-            realized that it had major flaws. I came to understand that I
-            created a website tailored to my computer. Its styles and format did
-            not keep on multi-media such as tablets or mobile views. I did not
-            want to alter the website so I could use it as a showcase for my
-            growth. Instead, I started from scratch and built this new site with
-            many improvements. I believe that this is a website that I can use
-            for an online portfolio. I hope that I have set up this website with
-            the ability to adapt and add to it.
-          </p>
-        </div>
-      </li>
-      <li class="work">
-        <input class="radio" id="item3" name="works" type="radio" />
-        <div class="relative">
-          <label for="item3">Personal & Professional Website</label>
-          <span class="circle"></span>
-        </div>
-        <div class="content">
-          <h4>Start Date: <i>Early May 2022</i></h4>
-          <h4>Current Status:<span class="status done"></span></h4>
-          <h4>
-            Links:
-            <i
-              ><a
-                href="oldVersion/index.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Home Page</a
-              ></i
-            >
-            |
-            <i
-              ><a
-                href="https://github.com/isabel-gnagy/isabel-gnagy.github.io/tree/master/oldVersion"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub Repo</a
-              ></i
-            >
-          </h4>
-          <p>
-            In the technology industry, we are starting to become remote and
-            isolated from others. But I don't want to lose the personal
-            connections and ability to learn about my peers. I decided to make a
-            website for myself to bridge this gap with information on me
-            professionally and personally for those around me to view. I also
-            enjoyed the challenge of designing HTML for personal experience.
-          </p>
-        </div>
-      </li>
-    </ul>
+    <h1 style="padding-left: 1em">All Projects</h1>
+    <ol>
+      <b>Legend:</b>
+      <li>Idea/In the works</li>
+      <li>Inprogess/Updates Continue</li>
+      <li>Completed</li>
+    </ol>
+    <div class="timeline">
+      <ul>
+        <li>
+          <span>Mini Projects</span>
+          <div class="content">
+            <h4>TBD</h4>
+            <p>
+              <i>
+                Links: <a href="#">N/A</a> |
+                <a href="#">N/A</a>
+              </i>
+            </p>
+            <p>
+              I am continuing to brainstorm mini-project ideas. I've had many
+              come to mind but none so far have taken root in my brain. Finding
+              time to dedicate is also an obstacle I face as a growing adult.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span>Personal Portfolio Website</span>
+          <div class="content">
+            <h4>Mid June 2022</h4>
+            <p>
+              <i>
+                Links: <a href="index.html">Home Page</a> |
+                <a
+                  href="https://github.com/isabel-gnagy/isabel-gnagy.github.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo</a
+                >
+              </i>
+            </p>
+            <p>
+              After completing my "Personal & Professional Website" project, I
+              realized that it had major flaws. I came to understand that I
+              created a website tailored to my computer. Its styles and format
+              did not keep on multi-media such as tablets or mobile views. I did
+              not want to alter the website so I could use it as a showcase for
+              my growth. Instead, I started from scratch and built this new site
+              with many improvements. I believe that this is a website that I
+              can use for an online portfolio. I hope that I have set up this
+              website with the ability to adapt and add to it.
+            </p>
+          </div>
+        </li>
+
+        <li>
+          <span>Personal & Professional Website</span>
+          <div class="content">
+            <h4>Early May 2022</h4>
+            <p>
+              <i>
+                Links:<a
+                  href="oldVersion/index.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Home Page</a
+                >
+                |
+                <a
+                  href="https://github.com/isabel-gnagy/isabel-gnagy.github.io/tree/master/oldVersion"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub Repo</a
+                >
+              </i>
+            </p>
+            <p>
+              In the technology industry, we are starting to become remote and
+              isolated from others. But I don't want to lose the personal
+              connections and ability to learn about my peers. I decided to make
+              a website for myself to bridge this gap with information on me
+              professionally and personally for those around me to view. I also
+              enjoyed the challenge of designing HTML for personal experience.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <footer-component></footer-component>
   </body>

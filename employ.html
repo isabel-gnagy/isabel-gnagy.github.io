@@ -6,104 +6,137 @@
     <script src="Reusable/NavBar/navbar-script.js"></script>
     <script src="Reusable/Header/header.js"></script>
     <script src="Reusable/Footer/footer.js"></script>
-    <script src="Reusable/NavBar/scripts.js"></script>  
-    
+    <script src="Reusable/NavBar/scripts.js"></script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    
+
     <title>Home ~ isabel</title>
-    
-    <link id="mode" href="styles.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="/pictures/tab.ico" type="image/ico">
+
+    <link id="mode" href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/pictures/tab.ico" type="image/ico" />
   </head>
 
   <style>
-    img{ max-width: 33%;}    
+    .summary {
+      padding-left: 1em;
+    }
+    .timeline ul li:nth-child(1):hover::before {
+      background-color: #478e46;
+      box-shadow: 0px 0px 15px 3px #478e46;
+    }
+    .timeline ul li:nth-child(2):hover::before {
+      background-color: #467e8e;
+      box-shadow: 0px 0px 15px 3px #467e8e;
+    }
+    .timeline ul li:nth-child(3):hover::before {
+      background-color: #467e8e;
+      box-shadow: 0px 0px 15px 3px #467e8e;
+    }
   </style>
 
   <body>
     <header-component></header-component>
 
     <nav-component></nav-component>
-
-    <div class="title"><h1>Employment</h1></div>
-      <div class="timeline">
-        <div class="container cont">
+    <div style="padding-left: 1em">
+      <h1>Employment</h1>
+      <p>
+        Please feel free to view my
+        <a
+          href="https://www.linkedin.com/in/isabel-gnagy-2022/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn</a
+        >
+        for a more detailed list of skills relative to each experience.
+        <b
+          >OR click
+          <a
+            href="./Isabel-Gnagy_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Isabel-Gnagy_Resume"
+            >here</a
+          >
+          to veiw my resume.</b
+        >
+      </p>
+    </div>
+    <div class="timeline">
+      <ul>
+        <li>
+          <span>Skills</span>
           <div class="content">
-            <h2>June 2022-Now</h2>
-            <h3>Associate Software Engineer</h3>
-            <p><i>Park Place Technologies</i></p>
-            <p> 
-              <ul>
-                  <li>
-                    Asynchronously collaborate, share, and learn from colleagues, and function as an excellent 
-                    team player that can make significant contributions individually as well as in a group
-                  </li>
-                  <li>
-                    Learn and adapt to programming standards to build and maintain high performing, 
-                    reusable, and reliable code
-                  </li>
-                  <li>
-                    Participate in all phases of SDLC including design, development, testing, documentation, 
-                    and support by troubleshooting and resolving production issues
-                  </li>
-              </ul>
-            </p>
-          </div>
-        </div>
-        <div class="container cont">
-          <div class="content">
-            <h2>Jan 2022-May 2022</h2>
-            <h3>Project Coordinator and Development Intern</h3>
-            <p><i>Park Place Technologies</i></p>
+            <p><b>Languages:</b> C#, Java/JavaScript, TypeScript</p>
             <p>
-              <ul>
-                <li>
-                  Coordinated with business analysts, communicated with development team members, and worked 
-                  hand in hand with project managers to achieve successful deliverable solutions that meet 
-                  specific project objectives
-                </li>
-                <li>
-                  Collaborate, share, and learn from team members, actively follow all team processes, track 
-                  meeting action items and follow up with project members to achieve goals and deadlines 
-                </li>
-                <li>
-                  Utilized Project Management technical tools to help manage and report to project sponsors and executives
-                </li>
-              </ul>
+              <b>Frameworks:</b>
+              .Net Framework, .NET Core, ASP.NET, Entity Framework
             </p>
-          </div>
-        </div>
-        <div class="container cont">
-          <div class="content">
-            <h2>April 2021-Aug 2021</h2>
-            <h3>Full Stack Intern</h3>
-            <p><i>BYG Technologies</i></p>
             <p>
-              <ul>
-                <li>
-                  Implemented web-based UI using MVC, Visual Studio, .Net framework 4.5, C#, SQL Server
-                  Management Studio, Bootstrap, AJAX, XML, JavaScript, HTML, CSS, and Able Commerce to
-                  create responsive web pages 
-                </li>
-                <li>
-                  Designed and developed a user-friendly website, including optimization of administration and
-                  inventory pages to enhance web functionality and speed 
-                </li>
-                <li>
-                  Conducted work in-office in a team of three and independently from home while maintaining
-                  precise and effective communication
-                </li>
-
-              </ul>
+              <b>Web Dev:</b> HTML, Angular, CSS/SCSS, AJAX, Bootstrap, React
+            </p>
+            <p><b>Data:</b> SQL Server, MongoDB</p>
+            <p>
+              <b>Software:</b> Azure Devops, Visual Studio Code, Visual Studio,
+              SSMS
             </p>
           </div>
-        </div>
-      </div>
-      <br> 
+        </li>
+        <li>
+          <span>Associate Software Engineer</span>
+          <div class="content">
+            <h4>June 2022-Now</h4>
+            <i>Park Place Technologies</i> | Remote
+            <div class="summary">
+              <p>
+                &#8618; Asynchronously collaborate, share, and learn from
+                colleagues, and function as an excellent team player that can
+                make significant contributions individually as well as in a
+                group
+              </p>
+              <p>
+                &#8618; Learn and adapt to programming standards to build and
+                maintain high performing, reusable, and reliable code
+              </p>
+              <p>
+                &#8618; Participate in all phases of SDLC including design,
+                development, testing, documentation, and support by
+                troubleshooting and resolving production issues
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <span>Project Coordinator and Development Intern</span>
+          <div class="content">
+            <h4>Jan 2022-May 2022</h4>
+            <i>Park Place Technologies</i> | Hybrid
+            <div class="summary">
+              <p>
+                &#8618; Coordinated with business analysts, communicated with
+                development team members, and worked hand in hand with project
+                managers to achieve successful deliverable solutions that meet
+                specific project objectives
+              </p>
+              <p>
+                &#8618; Collaborate, share, and learn from team members,
+                actively follow all team processes, track meeting action items
+                and follow up with project members to achieve goals and
+                deadlines
+              </p>
+              <p>
+                &#8618; Utilized Project Management technical tools to help
+                manage and report to project sponsors and executives
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
 
     <footer-component></footer-component>
-
   </body>
-
 </html>
