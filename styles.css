@@ -8,6 +8,39 @@ body {
   animation-fill-mode: forwards;
 }
 
+* {
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-weight: lighter;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.pageContent {
+  display: flex;
+  width: 100%;
+  padding: 0.5em;
+}
+.icon {
+  height: 40px;
+  width: auto;
+  padding-right: 5px;
+}
+.main,
+.left,
+.right {
+  width: 33%;
+  padding: 1em;
+}
+h1 {
+  font-style: italic;
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -17,92 +50,43 @@ body {
   }
 }
 
-a,
-h1,
-h2 {
-  font-weight: lighter;
-}
-
 ::-webkit-scrollbar {
   width: 1vw;
 }
-
 ::-webkit-scrollbar-track {
   background: transparent;
   border: 2px solid #b4b4b4;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #65656569;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #848484b2;
-}
-
-img {
-  width: 100%;
-  vertical-align: middle;
-  object-fit: contain;
-}
-
-/*
-Content div
-*/
-.pageContent {
-  display: flex;
-  width: 100%;
-  padding: 1em;
-}
-
-.icon {
-  height: 40px;
-  width: auto;
-  padding-right: 5px;
-}
-
-.left {
-  width: 33%;
-  padding: 1em;
-}
-
-h1 {
-  font-style: italic;
-}
-
-.main {
-  width: 33%;
-  padding: 1em;
-}
-
-.right {
-  width: 33%;
-  padding: 1em;
 }
 
 @media screen and (max-width: 600px) {
   .pageContent {
     display: block;
     width: 99%;
-    padding: 1em;
+    padding: 0.5em;
   }
   .left,
   .main,
   .right {
     min-width: 100%;
+    padding: 0.5em;
+  }
+  body {
+    font-size: medium;
   }
   p {
     text-align: justify;
   }
+  .icon {
+    height: 30px;
+    width: auto;
+  }
 }
-
-* {
-  box-sizing: border-box;
-}
-
-/* 
-Timelines 
-*/
 
 .timeline {
   padding-left: 3em;
@@ -143,11 +127,10 @@ Timelines
   left: -16px;
   transition: 0.5s;
 }
-
 .timeline ul li:hover {
   background-color: #ededed;
   transition: 0.5s;
 }
 .timeline ul li:hover .content {
-  font-size: large;
+  font-size: inherit;
 }
