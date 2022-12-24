@@ -20,6 +20,7 @@ a {
 
 .topnav .icon {
   display: none;
+  height: auto;
 }
 
 .dropdown {

@@ -43,7 +43,6 @@ h2 {
 img {
   width: 100%;
   vertical-align: middle;
-  margin: 0.5vw;
   object-fit: contain;
 }
 
@@ -53,22 +52,18 @@ Content div
 .pageContent {
   display: flex;
   width: 100%;
+  padding: 1em;
 }
 
 .icon {
-  height: 20px;
+  height: 40px;
   width: auto;
   padding-right: 5px;
 }
 
 .left {
   width: 33%;
-  margin: 1vw;
-}
-
-.left p,
-h1 {
-  width: 100%;
+  padding: 1em;
 }
 
 h1 {
@@ -77,24 +72,27 @@ h1 {
 
 .main {
   width: 33%;
-  margin: 1vw;
+  padding: 1em;
 }
 
 .right {
   width: 33%;
-  margin: 1vw;
+  padding: 1em;
 }
 
 @media screen and (max-width: 600px) {
   .pageContent {
     display: block;
-    width: 95%;
-    font-size: 4vw;
+    width: 99%;
+    padding: 1em;
   }
   .left,
   .main,
   .right {
     min-width: 100%;
+  }
+  p {
+    text-align: justify;
   }
 }
 
