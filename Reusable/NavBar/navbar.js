@@ -19,18 +19,9 @@ class NavBar extends HTMLElement {
                 </div>
               </div>
       
-              <div class="dropdown">
-                <button class="dropbtn">
-                  Professional
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="edu.html">Education</a>
-                  <a href="employ.html">Employment</a>
-                </div>
-              </div>
+              <a href="history.html">Background</a>
               
-              <a href="project.html">My Projects</a>
+              <a href="project.html">Projects</a>
               
               <a style="font-size: 15px" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
@@ -40,3 +31,16 @@ class NavBar extends HTMLElement {
 }
 
 customElements.define("nav-component", NavBar);
+
+{
+  /* <div class="dropdown">
+                <button class="dropbtn">
+                  Professional
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="edu.html">Education</a>
+                  <a href="employ.html">Employment</a>
+                </div>
+              </div> */
+}
