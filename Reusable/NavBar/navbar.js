@@ -8,16 +8,7 @@ class NavBar extends HTMLElement {
             <div class="topnav" id="myTopnav">
               <a href="index.html" class="active">Home</a>
       
-              <div class="dropdown">
-                <button class="dropbtn">
-                  About Me
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="mystory.html">My Story</a> 
-                  <a href="gtkm.html">Get To Know Me</a>
-                </div>
-              </div>
+              <a href="aboutme.html">About Me</a>
       
               <a href="history.html">Background</a>
               
