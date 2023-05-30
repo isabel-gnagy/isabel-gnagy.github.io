@@ -22,16 +22,3 @@ class NavBar extends HTMLElement {
 }
 
 customElements.define("nav-component", NavBar);
-
-{
-  /* <div class="dropdown">
-                <button class="dropbtn">
-                  Professional
-                  <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="edu.html">Education</a>
-                  <a href="employ.html">Employment</a>
-                </div>
-              </div> */
-}
