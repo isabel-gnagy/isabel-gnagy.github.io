@@ -1,6 +1,14 @@
+:root{
+  --mainbg: #93B1A6;
+  --text: #040D12;
+  --accent: #183D3D;
+  --second: #5C8374;
+}
+
 body {
-  background-color: lightgray;
+  background-color: var(--mainbg);
   margin: 0;
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
   animation: fadeInAnimation ease 2s;
@@ -8,19 +16,65 @@ body {
   animation-fill-mode: forwards;
 }
 
+html {
+  scroll-behavior: smooth;
+  background-color: var(--mainbg);
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#home, #about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro{
+  width: 50%;
+}
+
+.accenttxt, a{
+  color: var(--accent);
+}
+
+.navSpacer {
+  padding: 2em;
+}
+
 * {
   box-sizing: border-box;
 }
 h1,
-h2 {
+h2,
+h3 {
   font-weight: lighter;
+  color: var(--accent);
 }
 img {
   width: 100%;
   vertical-align: middle;
   object-fit: contain;
 }
-
+button{
+  padding: 10px 10px; 
+  border-radius: 25px; 
+  border: none;
+  color: var(--mainbg); 
+  background-color: black; 
+}
 .pageContent {
   display: flex;
   width: 100%;
@@ -37,9 +91,6 @@ img {
   width: 33%;
   padding: 1em;
 }
-h1 {
-  font-style: italic;
-}
 
 @keyframes fadeInAnimation {
   0% {
@@ -55,7 +106,7 @@ h1 {
 }
 ::-webkit-scrollbar-track {
   background: transparent;
-  border: 2px solid #b4b4b4;
+  border: 2px solid var(--second);
 }
 ::-webkit-scrollbar-thumb {
   background: #65656569;
@@ -94,7 +145,7 @@ h1 {
 }
 .timeline ul {
   list-style-type: none;
-  border-left: 3px solid black;
+  border-left: 3px solid var(--text);
   padding: 10px 4px;
   z-index: 1;
 }
@@ -110,8 +161,8 @@ h1 {
 }
 .timeline ul li span {
   display: inline-block;
-  background-color: #656565;
-  color: #f2f2f2;
+  background-color: var(--accent);
+  color: var(--mainbg);
   border-radius: 25px;
   font-weight: bold;
   padding: 5px 9px;
@@ -122,14 +173,15 @@ h1 {
   content: "";
   width: 20px;
   height: 20px;
-  background-color: black;
+  background-color: var(--text);
   border-radius: 50%;
   left: -16px;
   transition: 0.5s;
 }
 .timeline ul li:hover {
-  background-color: #ededed;
+  background-color: var(--second);
   transition: 0.5s;
+  border-radius: 25px;
 }
 .timeline ul li:hover .content {
   font-size: inherit;

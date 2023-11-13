@@ -20,7 +20,7 @@ function stickyScroll() {
     navbar.classList.add("sticky");
     header.classList.add("hidden");
   } else {
-    navbar.classList.remove("sticky");
     header.classList.add("shown");
+    navbar.classList.remove("sticky");
   }
 }

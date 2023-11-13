@@ -6,15 +6,15 @@ class NavBar extends HTMLElement {
         <style> .topnav { display: none; } </style>
         <link href="Reusable/NavBar/navStyle.css" rel="stylesheet" type="text/css">
             <div class="topnav" id="myTopnav">
-              <a href="index.html" class="active">Home</a>
-      
-              <a href="aboutme.html">About Me</a>
-      
-              <a href="history.html">Background</a>
-              
-              <a href="project.html">Projects</a>
-              
-              <a style="font-size: 15px" class="icon" onclick="myFunction()">&#9776;</a>
+                <a href="index.html">Home</a>
+                
+                <a href="aboutme.html">About Me</a>
+        
+                <a href="history.html">Background</a>
+                
+                <a href="project.html">Projects</a>
+                
+                <a style="font-size: 15px" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
     
     `;

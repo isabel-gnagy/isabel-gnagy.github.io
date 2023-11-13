@@ -1,19 +1,25 @@
+:root{
+  --mainbg: #93B1A6;
+  --text: #040D12;
+  --accent: #183D3D;
+  --second: #5C8374;
+}
+
 .topnav {
   overflow: hidden;
-  background-color: #656565;
-  display: block;
+  background-color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--mainbg);
   text-align: center;
-  padding: 14px 16px;
+  margin: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
-a {
-  color: #666666;
 }
 .topnav .icon {
   display: none;
@@ -33,7 +39,7 @@ nav.fill ul li a:after {
   width: 0%;
   content: ".";
   color: transparent;
-  background: #333;
+  background: var(--accent);
   height: 1px;
 }
 nav.stroke ul li a:hover:after {
@@ -45,12 +51,11 @@ nav.fill ul li a {
 }
 
 .topnav a:hover {
-  background-color: #808080;
-  color: whitesmoke;
-}
-
-a:hover {
-  color: black;
+  background-color: var(--second);
+  color: var(--text);
+  border-radius: 25px;
+  padding: 8px 10px;
+  margin: 6px 6px;
 }
 
 .sticky {
@@ -64,6 +69,7 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+  .topnav{display: block;}
   .topnav a:not(:first-child),
   .dropdown .dropbtn {
     display: none;
